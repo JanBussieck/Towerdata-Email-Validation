@@ -9,7 +9,7 @@ describe "TowerdataEmail" do
 
     before(:each)  do
       TowerdataEmail.configure do |c|
-        c.token = '5eEczAXe9b'
+        c.token = ENV['API_KEY']
       end
     end
 

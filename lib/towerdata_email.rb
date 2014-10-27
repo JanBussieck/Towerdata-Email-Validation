@@ -47,6 +47,7 @@ module TowerdataEmail
       response.email
     end
 
+    # needs special API permissions
     def self.postal_data(email)
       if config.postal
         response  = lead_data(email)
